@@ -1,0 +1,49 @@
+body {
+  font-family: "Prompt", sans-serif; /* Default font-family for body */
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the navbar */
+}
+
+.navbar-brand,
+.nav-link {
+  color: #fff;
+  font-family: "Prompt", sans-serif; /* Custom font-family for navbar items */
+}
+
+.navbar-dark {
+  background-color: #000000 !important;
+}
+
+@media (max-width: 990px) {
+  .navbar-collapse {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    height: 100%;
+    width: 60%; /* Adjust to a percentage of viewport width */
+    max-width: 350px; /* Optional: Limit maximum width */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    background-color: #000000; /* Match the navbar background color */
+  }
+
+  .navbar-collapse.show {
+    transform: translateX(0);
+  }
+
+  .dropdown-menu {
+    font-size: small;
+    padding-right: 0;
+    width: 90%; /* Make dropdown fit the navbar width */
+  }
+
+  .navbar-toggler {
+    z-index: 1050; /* Ensure it’s above the collapse */
+  }
+}
