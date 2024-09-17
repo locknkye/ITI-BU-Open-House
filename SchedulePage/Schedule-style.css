@@ -17,10 +17,26 @@
   overflow: hidden;
   white-space: nowrap;
   z-index: -1;
+  line-height: 4rem;
 }
-
+.date-text-p {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f57c00; /* Orange color */
+  padding: 0.5rem;
+  animation: smoothWave 2s infinite ease-in-out;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: -1;
+  line-height: 1rem;
+}
 .date-section{
   text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 @keyframes smoothWave {
   0% {
@@ -154,5 +170,12 @@
   .modal-body p,
   .modal-body ul {
     font-size: 0.9rem; /* Adjust body text size for smaller screens */
+  }
+
+  .date-text-p {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
   }
 }
