@@ -1,14 +1,11 @@
 /*-------- schedule page .css ----------------------- */
 
 .schedule-container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px; /* Limit maximum width */
   margin: auto;
   padding: 1rem;
-}
-
-.date-section {
-  text-align: center;
+  text-align: left;
 }
 .date-text {
   display: inline-block;
@@ -22,6 +19,9 @@
   z-index: -1;
 }
 
+.date-section{
+  text-align: center;
+}
 @keyframes smoothWave {
   0% {
     transform: translate3d(0, 0, 0);
@@ -54,7 +54,7 @@
 /* Fix the bottom left and right corner borders */
 .table-bordered tbody tr:last-child td:first-child {
   border-radius: 0 0 0 1rem;
-  padding: 0;
+  
 }
 
 .table-bordered tbody tr:last-child td:last-child {
@@ -88,10 +88,7 @@
   padding-bottom: 0;
 }
 
-.table td {
-  height: fit-content;
 
-}
 
 /* Time Label Styles */
 .time-label {
@@ -156,6 +153,6 @@
   .modal-title,
   .modal-body p,
   .modal-body ul {
-    font-size: 0.7rem; /* Adjust body text size for smaller screens */
+    font-size: 0.9rem; /* Adjust body text size for smaller screens */
   }
 }

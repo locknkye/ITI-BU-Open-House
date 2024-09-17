@@ -7,19 +7,26 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the navbar */
 }
 
+.nav-item{
+    margin-right: 2rem;
+}
+
 .navbar-brand,
 .nav-link {
-  color: #fff;
   font-family: "Prompt", sans-serif; /* Custom font-family for navbar items */
 }
 
 .navbar-dark {
   background-color: #000000 !important;
 }
+.dropdown-item:hover{
+    background-color: #9c9c9c;
+    color: #f5f5f5;
+}
 
 @media (max-width: 990px) {
   .navbar-collapse {
-    z-index: 1;
+    z-index: 10;
     position: fixed;
     top: 0;
     right: 0;
@@ -27,7 +34,7 @@ body {
     padding-left: 2rem;
     height: 100%;
     width: 60%; /* Adjust to a percentage of viewport width */
-    max-width: 350px; /* Optional: Limit maximum width */
+    max-width: 400px; /* Optional: Limit maximum width */
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     background-color: #000000; /* Match the navbar background color */
@@ -40,7 +47,7 @@ body {
   .dropdown-menu {
     font-size: small;
     padding-right: 0;
-    width: 90%; /* Make dropdown fit the navbar width */
+    width: fit-content;
   }
 
   .navbar-toggler {
