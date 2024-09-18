@@ -1,0 +1,95 @@
+/* /ContactPage/Contact-style.css */
+
+/* Overall Body Styling */
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #f4f4f4; /* สีพื้นหลังที่อ่อนเพื่อความสะอาดตา */
+    color: #333; /* สีตัวอักษรหลัก */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40; /* สีพื้นหลังของ Navbar */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* สีข้อความใน Navbar */
+}
+
+.navbar-nav .nav-link.active {
+    color: #f8f9fa; /* สีข้อความของลิงค์ที่เลือก */
+}
+
+.navbar-brand img {
+    width: 150px;
+    height: auto;
+}
+
+/* Contact Information Section */
+.container {
+    margin-top: 2rem;
+}
+
+h1 {
+    color: #0056b3; /* สีหัวเรื่อง */
+}
+
+h2 {
+    color: #007bff; /* สีหัวเรื่องรอง */
+    border-bottom: 2px solid #007bff; /* เส้นใต้หัวเรื่อง */
+    padding-bottom: 0.5rem;
+}
+
+address p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+address a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.form-label {
+    font-weight: 500;
+}
+
+.form-control {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 120px;
+    }
+
+    .container {
+        margin-top: 1rem;
+    }
+}

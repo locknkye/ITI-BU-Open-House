@@ -1,0 +1,145 @@
+/* Style for card container */
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Space around the card row */
+}
+
+/* Style for individual card */
+.profile-card {
+  flex: 1 1 calc(33.33% - 40px); /* Responsive card size with spacing */
+  max-width: 50%; /* Max width for each card */
+  margin: 0 auto; /* Center card horizontally */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  background: #fff; /* White background */
+  text-align: left;
+  padding: 20px; /* Add padding inside the card */
+  cursor: pointer;
+}
+
+.profile-card hr.separator {
+  border: none; /* Remove default styling */
+  border-top: 1px solid #9c9c9c; /* Light gray line */
+  margin: 8px 0; /* Space above and below the line */
+}
+
+
+.profile-card p{
+  color: #9c9c9c;
+  font-weight: 300;
+  margin-bottom: 10;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  padding-bottom: 0;
+}
+
+/* Style for card image */
+.profile-card img {
+  width: 100%;
+  height: auto;
+}
+
+.profile-card{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+/* Style for card modal */
+.modal {
+  display: none;
+  position: fixed;
+  padding-right: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for modal content */
+.modal-content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Close button for modal */
+.close {
+  cursor: pointer;
+  font-size: 1.5em;
+  color: #333;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Center cards on the page */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 10px;
+}
+
+.tab-bar {
+  display: flex;
+  justify-content: center;
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+.tab-bar a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0 5px;
+  font-weight: bold;
+}
+.tab-bar a.active {
+  background-color: #000000;
+  color: #fff;
+  border-color: #9c9c9c;
+}
+.tab-bar a.inactive {
+  background-color: #9c9c9c;
+  color:  #ddd;
+}
+
+.tab-bar a.hover-text {
+  font-size: 5vw;/* Initial font size */
+  font-weight: medium;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+  margin-right: 2px; /* Adjust spacing between letters */
+  cursor: default;
+  
+}
+
+.tab-bar a:hover {
+  transform: translateY(5px); /* Adjust the value as needed */
+}
+
+.card.h-100:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+.btn.btn-primary{
+  color: #ffffff;
+  background-color: #375391;
+  border: #375391;
+  justify-content: center;
+}
