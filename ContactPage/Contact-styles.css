@@ -28,15 +28,17 @@ body {
 /* Contact Information Section */
 .container {
     margin-top: 2rem;
+    margin: 10px;
+
 }
 
 h1 {
-    color: #0056b3; /* สีหัวเรื่อง */
+    color: #030303; /* สีหัวเรื่อง */
 }
 
 h2 {
-    color: #007bff; /* สีหัวเรื่องรอง */
-    border-bottom: 2px solid #007bff; /* เส้นใต้หัวเรื่อง */
+    color: #000000; 
+    border-bottom: 2px solid #9c9c9c; 
     padding-bottom: 0.5rem;
 }
 
@@ -46,7 +48,7 @@ address p {
 }
 
 address a {
-    color: #007bff;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -73,14 +75,19 @@ textarea.form-control {
     resize: vertical;
 }
 
+
+
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    color: #ffffff;
+    background-color: #375391;
+    border: #375391;
+    justify-content: center;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background-color: #9c9c9c ; /* Primary button color */
+    border-color: #9c9c9c; /* Border color */
+    justify-content: center;
 }
 
 /* Responsive Design */
@@ -93,3 +100,124 @@ textarea.form-control {
         margin-top: 1rem;
     }
 }
+
+h1{
+    font-weight: 600;
+    font-size: 14vw;
+    margin: 0;
+}
+.faq-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+  
+.faq-title {
+    color: #f57c00;
+    margin-bottom: 0.5rem; /* Adjust this value to control space between title and small text */
+}
+
+/* Social icons */
+.social-icon {
+    color: #ffffff; /* สีของไอคอน */
+    font-size: 2rem; /* ขนาดของไอคอน */
+    margin: 0 15px; /* ระยะห่างระหว่างไอคอน */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for social icons */
+  .social-icon:hover {
+    color: #f57c00; /* เปลี่ยนสีเมื่อ hover */
+    transform: scale(1.2); /* ขยายขนาดเมื่อ hover */
+  }
+  
+  /* Text decoration */
+  .moving-text {
+    color: #ffffff;
+    font-size: 1.5rem;
+    animation: slide-left 5s infinite alternate; /* Animation ขยับ */
+  }
+  
+  /* Animation keyframes */
+  @keyframes slide-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-20px);
+    }
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+/* Style for card modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Style for modal content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-sizing: border-box;
+  }
+  
+  /* Ensure modal is responsive */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%; /* Make modal nearly full width on mobile */
+  }
+  p {
+    font-size: 80%; /* Scale down for smaller screens */
+  }
+  .profile-card {
+    flex: 0 1 calc(50% - 20px); /* Two cards per row on smaller screens */
+  }
+}
+  /* Close button for modal */
+  .close {
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    margin: 10px 0; 
+  }
+  
+  .icon-text i {
+    color: #000000; 
+    font-size: 24px; 
+    margin-right: 10px; 
+  }
+  
+  .icon-text a {
+    color: #000000; 
+    font-size: 1.2rem; 
+    text-decoration: none; 
+  }
+  
+
+  .icon-text a:hover {
+    color: #375391; 
+    text-decoration: underline; 
+  }
+  
