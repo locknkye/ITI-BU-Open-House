@@ -12,9 +12,10 @@ form {
 }
 
 .btn-primary {
-    background-color: #000000 ; /* Primary button color */
-    border-color: #000000 ; /* Border color */
-    justify-content: center;
+  color: #ffffff;
+  background-color: #375391;
+  border: #375391;
+  justify-content: center;
 }
 
 .back-button {
@@ -53,15 +54,26 @@ form {
   
   /* Style for modal content */
   .modal-content {
-    background: #fff;
-    border-radius: 8px;
-    padding: 100px;
-    max-width: 500px;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-sizing: border-box;
   }
   
+  /* Ensure modal is responsive */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%; /* Make modal nearly full width on mobile */
+  }
+  p {
+    font-size: 80%; /* Scale down for smaller screens */
+  }
+  .profile-card {
+    flex: 0 1 calc(50% - 20px); /* Two cards per row on smaller screens */
+  }
+}
   /* Close button for modal */
   .close {
     cursor: pointer;
