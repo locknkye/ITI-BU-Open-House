@@ -1,34 +1,10 @@
-/* /ContactPage/Contact-style.css */
-
-/* Overall Body Styling */
 body {
-    font-family: 'Prompt', sans-serif;
-    background-color: #f4f4f4; /* สีพื้นหลังที่อ่อนเพื่อความสะอาดตา */
-    color: #333; /* สีตัวอักษรหลัก */
+  font-family: 'Prompt', sans-serif;
 }
-
-/* Navbar */
-.navbar {
-    background-color: #343a40; /* สีพื้นหลังของ Navbar */
-}
-
-.navbar-nav .nav-link {
-    color: #ffffff; /* สีข้อความใน Navbar */
-}
-
-.navbar-nav .nav-link.active {
-    color: #f8f9fa; /* สีข้อความของลิงค์ที่เลือก */
-}
-
-.navbar-brand img {
-    width: 150px;
-    height: auto;
-}
-
 /* Contact Information Section */
 .container {
     margin-top: 2rem;
-    margin: 10px;
+    margin: auto;
 
 }
 
@@ -91,24 +67,37 @@ textarea.form-control {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 990px) {
     .navbar-brand img {
         width: 120px;
     }
 
-    .container {
-        margin-top: 1rem;
+    .fag-container {
+      font-size: 0.7rem;
+      padding: 1rem;
+    }
+
+    .row.container{
+      font-size: 0.7rem;
+      padding: 1rem;
     }
 }
 
 h1{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14vw;
     margin: 0;
 }
 .faq-container {
-    text-align: center;
-    margin-top: 2rem;
+  font-size: 3rem;
+  color: #333;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  margin: auto;
 }
   
 .faq-title {
@@ -149,7 +138,7 @@ h1{
 
   form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: auto;
   }
 
 /* Style for card modal */
@@ -176,7 +165,7 @@ h1{
   }
   
   /* Ensure modal is responsive */
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .modal-content {
     width: 95%; /* Make modal nearly full width on mobile */
   }
