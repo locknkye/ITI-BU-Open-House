@@ -1,0 +1,181 @@
+/*-------- schedule page .css ----------------------- */
+
+.schedule-container {
+  width: 100%;
+  max-width: 1200px; /* Limit maximum width */
+  margin: auto;
+  padding: 1rem;
+  text-align: left;
+}
+.date-text {
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #f57c00; /* Orange color */
+  padding: 0.5rem;
+  animation: smoothWave 2s infinite ease-in-out;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: -1;
+  line-height: 4rem;
+}
+.date-text-p {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f57c00; /* Orange color */
+  padding: 0.5rem;
+  animation: smoothWave 2s infinite ease-in-out;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: -1;
+  line-height: 1rem;
+}
+.date-section{
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+@keyframes smoothWave {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 10px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.table-bordered {
+  border: 2px solid #dee2e6;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* Add background color and style to the header row */
+.table-bordered thead th {
+  background-color: #000000; /* Fill color for header */
+  color: white; /* White text for contrast */
+  font-weight: 500;
+  border: none;
+  border-radius: 0;
+  padding: 1rem;
+}
+
+/* Fix the bottom left and right corner borders */
+.table-bordered tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 1rem;
+  
+}
+
+.table-bordered tbody tr:last-child td:last-child {
+  border-radius: 0 0 1rem 0;
+}
+
+/* Optional: Hover effect for rows */
+.table-hover tbody tr:hover {
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.table h1 {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.table h2 {
+  font-weight: 400;
+  font-size: 1rem;
+  width: 30rem;
+}
+
+.table p {
+  color: #9c9c9c;
+  font-weight: 300;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  padding-bottom: 0;
+}
+
+
+
+/* Time Label Styles */
+.time-label {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  width: 4rem;
+  font-size: small;
+  margin-right: 4rem;
+}
+
+
+.time-label.morning {
+  background-color: #000000;
+}
+
+.time-label.noon {
+  background-color: #f57c00;
+}
+
+.time-label.evening {
+  background-color: #375391;
+}
+
+.modal-title {
+  font-size: large;
+  font-weight: 600;
+}
+.modal-dialog {
+  max-width: 90vw; /* Make modal width responsive */
+  margin: 0 10%;
+}
+.modal-body p,
+.modal-body ul {
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@media (max-width: 990px) {
+  .date-text {
+    font-size: 7vw;
+  }
+
+  .table h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+    min-width: 5rem;
+  }
+
+  .table div {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .modal-body p,
+  .modal-title,
+  .modal-body p,
+  .modal-body ul {
+    font-size: 0.9rem; /* Adjust body text size for smaller screens */
+  }
+
+  .date-text-p {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+}

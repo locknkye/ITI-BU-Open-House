@@ -1,0 +1,204 @@
+/* Style for card container */
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Space around the card row */
+}
+
+/* Style for individual card */
+.profile-card {
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  flex: 0 1 calc(33.333% - 20px); /* Three cards per row on larger screens */
+  box-sizing: border-box;
+  cursor: pointer;
+  height: max-content;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+.profile-card hr.separator {
+  border: none; /* Remove default styling */
+  border-top: 1px solid #9c9c9c; /* Light gray line */
+  margin: 8px 0; /* Space above and below the line */
+}
+
+
+.profile-card p{
+  color: #9c9c9c;
+  font-weight: 300;
+  margin-bottom: 10;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  padding-bottom: 0;
+  width: 100%;
+  min-width: 20rem;
+}
+
+/* Style for card image */
+.profile-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style for card modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-toggle {
+  display: none;
+}
+
+/* Style for modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+/* Ensure modal is responsive */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%; /* Make modal nearly full width on mobile */
+  }
+  p {
+    font-size: 80%; /* Scale down for smaller screens */
+  }
+  .profile-card {
+    flex: 0 1 calc(50% - 20px); /* Two cards per row on smaller screens */
+  }
+}
+
+.modal p {
+  width: 100%;
+  min-width: 10rem;
+  word-wrap: break-word; /* Ensure long words break to the next line */
+}
+
+/* Close button for modal */
+.close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Center cards on the page */
+.container {
+  max-width: 1900px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 30px;
+
+}
+
+.backg{
+    background: linear-gradient(45deg, #000000, #375391);
+}
+
+.tab-bar {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.tab-bar a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 8px;
+  margin: 0 5px;
+  font-weight: bold;
+}
+.tab-bar a.active {
+  background-color: #f57c00;
+  color: #fff;
+  border-color: #f57c00;
+}
+.tab-bar a.inactive {
+  background-color: #9c9c9c;
+  color:  #ddd;
+}
+
+.text-hover-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  align-items: flex-start; /* Align text to the left */
+  margin-left: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+
+.tab-bar a.hover-text {
+  font-size: 5vw;/* Initial font size */
+  font-weight: medium;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+  margin-right: 2px; /* Adjust spacing between letters */
+  cursor: default;
+}
+
+.wave{
+  animation: smoothWave 2s infinite ease-in-out;
+}
+
+.move-up:hover {
+  animation: jump-up 2s ease-in-out infinite;
+}
+
+@keyframes jump-up {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes smoothWave {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 10px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.tab-bar a:hover {
+  transform: translateY(5px); /* Adjust the value as needed */
+}
+
+.card.h-100:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+.btn.btn-primary{
+  color: #ffffff;
+  background-color: #375391;
+  border: #375391;
+  justify-content: center;
+}

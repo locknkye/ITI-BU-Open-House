@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITI BU Open House - Schedule</title>
+    <link rel="icon" type="icon/png" href="../image/icon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="Schedule-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
+      aria-label="Fifth navbar example"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/HomePage/Home.html">
+          <img
+            src="../image/logo.png"
+            alt="Logo"
+            style="width: 150px; height: auto"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample05"
+          aria-controls="navbarsExample05"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/HomePage/Home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/AboutPage.html"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >About</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/AboutPage.html"
+                    >About the Open House</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/SchedulePage/Schedule.html"
+                    >Schedule</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/SpeakerPage/Speaker.html"
+                    >Speaker Profile</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/WorkshopPage/Workshop.html"
+                    >Workshop and Activities</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/ContactPage/Contact.html"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/SponsorPage/Sponsor.html"
+                >Sponsor & Partner</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/FAQPage/FAQ.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container schedule-container">
+      <div class="date-section">
+        <span class="date-text">29 - 30 สิงหาคม 2024</span>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>เวลา</th>
+              <th>กิจกรรม</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              data-details='{
+                        "title": "การพัฒนาเกมด้วย Unreal Engine",
+                        "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ",
+                        "description": "ชวนน้องเกมเมอร์ตัวจริง ที่อยากไปได้ไกลกว่าแค่เป็นผู้เล่น แต่อยากเป็นผู้สร้าง มาร่วมสัมผัสประสบการณ์ในการพัฒนาเกมของจริง ด้วยโปรแกรม Unreal Engine พร้อมทั้งรับฟังคำแนะนำจากผู้เชี่ยวชาญในอุตสาหกรรมเกี่ยวกับเส้นทางอาชีพในสายงานด้านการพัฒนาเกม​โดยตรง",
+                        "speakers": [] ,
+                        "location": "A1-405",
+                        "dateTime": "29 สิงหาคม - 30 สิงหาคม เวลา 09.00 - 10.30 น. และ เวลา 11.00 - 12.30 น.",                  
+                        "duration": "จำนวนคนต่อรอบ 80 คน"
+                    }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>09:00 - 10:00 น.</div>
+                <div class="time-label noon">เที่ยง</div>
+                <div>12:00 - 13:30 น.</div>
+              </td>
+              <td>
+                <h1>การพัฒนาเกมด้วย Unreal Engine</h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "การพัฒนาเกมบนโลกเสมือนจริง Virtual Reality",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ",
+                "description": "ใครที่สนใจเกม VR เป็นพิเศษ ชอบที่ได้ออกท่าทางการเล่มเกมของจริง ชวนน้อง ๆ มารับประสบการณ์ใหม่ ที่ไม่ใช่แค่เล่นเกม แต่คือการสร้างเกมเสมือนจริง มาปฏิบัตจริง เรียนรู้พื้นฐานการใช้งานเครื่องมือสำหรับการพัฒนาเกมในโลกเสมือนจริง (Virtual Reality)",
+                "speakers": [] ,
+                "location": "A1-405",
+                "dateTime": "29 สิงหาคม - 30 สิงหาคม เวลา 10.30 - 12.00 น.. และ 13.30 - 15.00 น.",                  
+                "duration": "รอบละ 90 นาที จำนวนคนต่อรอบ 80 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>10.30 - 12.00 น.</div>
+                <div class="time-label evening">บ่าย</div>
+                <div>13.30 - 15.00 น.</div>
+              </td>
+
+              <td>
+                <h1>การพัฒนาเกมบนโลกเสมือนจริง Virtual Reality</h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "เทคนิคการพัฒนาระบบและเป็นผู้ปกป้องหมวกขาวในโลกไซเบอร์ White Hacker",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยไซเบอร์",
+                "description": "ใครที่สนใจเรื่องไอที เป็นคนชอบใส่ใจเรื่อง Bug อยากลองเป็นนักเจาะระบบ (ในทางที่ดี) ที่เรียกว่า White Hat Hacker ให้มาลองลงมือปฏิบัติของจริง และฝึกฝนทักษะที่จำเป็นสำหรับชาว White Hat Hero โดยเฉพาะเรื่องการรักษาความปลอดภัยทางไซเบอร์",
+                "speakers": [] ,
+                "location": "A1-401",
+                "dateTime": "29 สิงหาคม - 30 สิงหาคม เวลา 10.30 - 11.30 น. และ 12.30 - 14.00 น.",                  
+                "duration": "จำนวนคนต่อรอบ 15 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>10:00 - 11:30 น.</div>
+                <div class="time-label noon">เที่ยง</div>
+                <div>12:30 - 14:00 น.</div>
+              </td>
+              <td>
+                <h1>
+                  เทคนิคการพัฒนาระบบและเป็นผู้ปกป้องหมวกขาวในโลกไซเบอร์ White
+                  Hacker
+                </h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์
+                  มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยไซเบอร์
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "A successful story of professional in IT Industry (CS)",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์",
+                "description": "พบกับผู้เชี่ยวชาญและบริษัทชั้นนำตัวจริงที่มาจากภาคอุตสาหกรรม Cyber Security มาให้ข้อมูลพาเจาะเข้าโลกของตำรวจไซเบอร์ จุดประกายแรงบันดาลใจในเส้นทางสายอาชีพด้านเทคโนโลยีให้กับน้อง ๆ ที่สนใจวงการนี้",
+                "speakers": [] ,
+                "location": "A1-407",
+                "dateTime": "29 สิงหาคม - 30 สิงหาคม เวลา  09.00 - 10.00 น.",                  
+                "duration": "รอบละ 60 นาที จำนวนคนต่อรอบ 40 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>9:00 - 10:00 น.</div>
+              </td>
+              <td>
+                <h1>A successful story of professional in IT Industry (CS)</h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "เทคนิคการพัฒนาเว็บไซต์เต็มรูปแบบ (Frond End และ Back End)",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์",
+                "description": "ชวนน้อง ๆ ที่สนใจเรื่องการเขียนโปรแกรม รักในความซับซ้อนของการเขียนโค้ด มาเข้าร่วมงานลงมือปฏิบัติจริงทั้งเรื่อง Front-end และ Back-end ได้สัมผัสโปรแกรมอย่างลงลึก เห็นเทคนิคชั้นสูงต่าง ๆ จากผู้เชี่ยวชาญตัวจริง",
+                "speakers": [] ,
+                "location": "A1-407",
+                "dateTime": "29 สิงหาคม - 30 สิงหาคม เวลา  10.00 - 11.00 น. และ 13.00 - 14.00 น.",                  
+                "duration": "รอบละ 60 นาที จำนวนคนต่อรอบ 40 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>10:00 - 11:00 น.</div>
+                <div class="time-label evening">บ่าย</div>
+                <div>13:00 - 14:00 น.</div>
+              </td>
+              <td>
+                <h1>
+                  เทคนิคการพัฒนาเว็บไซต์เต็มรูปแบบ (Frond End และ Back End)
+                </h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "เทคนิคการวิเคราะห์และการนำเสนอข้อมูล (Data Science and Data Visualization)",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยไซเบอร์",
+                "description": "ใครเป็นสายวิเคราะห์ข้อมูล ชอบแหวกว่ายในโลกของ Big Data แล้วยังสนใจเรื่องของโปรแกรมเมอร์ ห้ามพลาดกับ Workshop ของสาขาวิทยาการคอมพิวเตอร์นี้ น้อง ๆ ที่เข้าร่วมจะได้รับประสบการณ์ปฏิบัติงานจริง และได้เรียนรู้ทักษะอาชีพด้าน Data Science",
+                "speakers": [] ,
+                "location": "A1-407",
+                "dateTime": "29 สิงหาคม - 30 สิงหาคม เวลา 11.00 - 12.00 น. และ 14.00 - 15.00 น.",                  
+                "duration": "รอบละ 60 นาที จำนวนคนต่อรอบ 40 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>11:00 - 12:00 น.</div>
+                <div class="time-label evening">บ่าย</div>
+                <div>14:00 - 15:00 น.</div>
+              </td>
+              <td>
+                <h1>
+                  เทคนิคการวิเคราะห์และการนำเสนอข้อมูล (Data Science and Data
+                  Visualization)
+                </h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์
+                  มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยไซเบอร์
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "A successful story of professional in IT Industry (IT)",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ",
+                "description": "น้องคนไหนที่ชอบเทคโนโลยี แต่ยังสงสัยถึง identity ว่าอะไรคือสารสนเทศนะ? ชวนมาหาคำตอบกับผู้เชี่ยวชาญตัวจริงเสียงจริงเรื่อง Information Technology กับบริษัทชั้นนำมาจากภาคอุตสาหกรรม ช่วยจุดประกายแรงบันดาลใจในเส้นทางสายอาชีพด้านเทคโนโลยี พาน้อง ๆ ต่อยอดความชอบได้อย่างตรงจุด",
+                "speakers": [] ,
+                "location": "A1-406",
+                "dateTime": "29 สิงหาคม - 30 สิงหาคม เวลา 09.00 - 10.00 น.",                  
+                "duration": "รอบละ 60 นาที จำนวนคนต่อรอบ 40 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>9:00 - 10:00 น.</div>
+              </td>
+              <td>
+                <h1>A successful story of professional in IT Industry (IT)</h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "การใช้ปัญญาประดิษฐ์วิเคราะห์ธุรกิจ (Business Analyst)",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ",
+                "description": "ถ้าน้อง ๆ เป็นคนที่ชอบทั้งเรื่องเทคโนโลยี และสนใจเรื่องการต่อยอดในธุรกิจ ทุกคนที่เข้าร่วมจะได้เรียนรู้เกี่ยวกับบทบาทและหน้าที่ของ Business Analyst เช่น การวิเคราะห์ข้อมูล การระบุปัญหา และโอกาสในการปรับปรุงธุรกิจ ฝึกสกิลการจัดทำรายงานธุรกิจจากข้อมูลอันหลากหลาย อัปความรู้ได้ทั้งเรื่องธุรกิจและ data",
+                "speakers": [] ,
+                "location": "A1-406",
+                "dateTime": "29 สิงหาคม - 30 สิงหาคม เวลา 10.00 - 11.00 น. และ 13.00 - 14.00 น.",                  
+                "duration": "รอบละ 60 นาที จำนวนคนต่อรอบ 40 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>10:00 - 11:00 น.</div>
+                <div class="time-label evening">บ่าย</div>
+                <div>13:00 - 14:00 น.</div>
+              </td>
+              <td>
+                <h1>การใช้ปัญญาประดิษฐ์วิเคราะห์ธุรกิจ (Business Analyst)</h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "การพัฒนาแอปพลิเคชัน ด้วย Low-Code Application Platform",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ",
+                "description": "อยากสร้างแอปเป็นของตัวเองให้หันมาทางนี้ ชวนน้อง ๆ มาเข้าร่วมกิจกรรมที่จะได้รับประสบการณ์ของจริงในการพัฒนาแอปพลิเคชันอย่างง่าย และรวดเร็ว ด้วย Oracle APEX",
+                "speakers": [] ,
+                "location": "A1-406",
+                "dateTime": "29 สิงหาคม - 30 สิงหาคม เวลา 11.00 - 12.00  น. และ 14.00 - 15.00 น.",                  
+                "duration": "รอบละ 60 นาที จำนวนคนต่อรอบ 40 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>11:00 - 12:00 น.</div>
+                <div class="time-label evening">บ่าย</div>
+                <div>14:00 - 15:00 น.</div>
+              </td>
+              <td>
+                <h1>การพัฒนาแอปพลิเคชัน ด้วย Low-Code Application Platform</h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "Industry Challenge Showcase: From Player to Pro-Creator",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ",
+                "description": "อยากสร้างแอปเป็นของตัวเองให้หันมาทางนี้ ชวนน้อง ๆ มาเข้าร่วมกิจกรรมที่จะได้รับประสบการณ์ของจริงในการพัฒนาแอปพลิเคชันอย่างง่าย และรวดเร็ว ด้วย Oracle APEX",
+                "speakers": [] ,
+                "location": "A1-101",
+                "dateTime": "29 สิงหาคม - 30 สิงหาคม เวลา 09.00-16.00 น.",                  
+                "duration": ""
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">ทั้งวัน</div>
+                <div>9:00 - 16:00 น.</div>
+              </td>
+              <td>
+                <h1>Industry Challenge Showcase: From Player to Pro-Creator</h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "Student Showcase : From Task to Pro-Developer",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม",
+                "description": "น้องๆ ที่สนใจอยากเป็นโปรแกรมเมอร์ขั้นเทพ มาชมการจัดแสดงผลงานสาขาวิชาเทคโนโลยีสารสนเทศ และสาขาวิชาวิทยาการคอมพิวเตอร์ ที่ประยุกต์ด้านการเขียนโปรแกรมร่วมกับเทคโนโลยี พร้อมได้รับความรู้แน่นๆ จากรุ่นพี่X",
+                "speakers": [] ,
+                "location": "โถง A1",
+                "dateTime": "29 สิงหาคม - 30 สิงหาคม เวลา 09.00-16.00 น.",                  
+                "duration": "รอบละ 60 นาที จำนวนคนต่อรอบ 40 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">ทั้งวัน</div>
+                <div>9:00 - 16:00 น.</div>
+              </td>
+              <td>
+                <h1>Student Showcase : From Task to Pro-Developer</h1>
+                <h2>คณะเทคโนโลยีสารสนเทศและนวัตกรรม</h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="date-section">
+        <span class="date-text">31 สิงหาคม 2024</span>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>เวลา</th>
+              <th>กิจกรรม</th>
+            </tr>
+          </thead>
+          <tbody data-bs-toggle="modal" data-bs-target="#detailModal">
+            <tr
+              data-details='{
+                "title": "การพัฒนาเกมด้วย Unreal Engine",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ",
+                "description": "ชวนน้องเกมเมอร์ตัวจริง ที่อยากไปได้ไกลกว่าแค่เป็นผู้เล่น แต่อยากเป็นผู้สร้าง มาร่วมสัมผัสประสบการณ์ในการพัฒนาเกมของจริง ด้วยโปรแกรม Unreal Engine พร้อมทั้งรับฟังคำแนะนำจากผู้เชี่ยวชาญในอุตสาหกรรมเกี่ยวกับเส้นทางอาชีพในสายงานด้านการพัฒนาเกม​โดยตรง",
+                "speakers": [] ,
+                "location": "A1-405",
+                "dateTime": "31 สิงหาคม เวลา 10.30 - 12.00 น.",                  
+                "duration": "จำนวนคนต่อรอบ 80 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>10:00 - 12:00 น.</div>
+              </td>
+              <td>
+                <h1>การพัฒนาเกมด้วย Unreal Engine</h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "การพัฒนาเกมบนโลกเสมือนจริง Virtual Reality",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ",
+                "description": "ใครที่สนใจเกม VR เป็นพิเศษ ชอบที่ได้ออกท่าทางการเล่มเกมของจริง ชวนน้อง ๆ มารับประสบการณ์ใหม่ ที่ไม่ใช่แค่เล่นเกม แต่คือการสร้างเกมเสมือนจริง มาปฏิบัตจริง เรียนรู้พื้นฐานการใช้งานเครื่องมือสำหรับการพัฒนาเกมในโลกเสมือนจริง (Virtual Reality)",
+                "speakers": [] ,
+                "location": "A1-405",
+                "dateTime": "31 สิงหาคม เวลา 10.30 - 12.00 น.. และ 13.30 - 15.00 น.",                  
+                "duration": "รอบละ 90 นาที จำนวนคนต่อรอบ 80 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>10.30 - 12.00 น.</div>
+                <div class="time-label evening">บ่าย</div>
+                <div>13.30 - 15.00 น.</div>
+              </td>
+              <td>
+                <h1>การพัฒนาเกมบนโลกเสมือนจริง Virtual Reality</h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "การสร้าง Visual Effect สำหรับเกม ด้วย Unreal Engine",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ",
+                "description": "ใครที่ติดใจกับ Special Effects ภายในเกม ไม่ว่าจะเบิด รถถัง ขี่กระบี่ ฟันดาบ อยากมาลองสัมผัสการสร้างของจริง ต้องมาเข้าร่วม Workshop นี้ พาน้อง ๆ เรียนรู้กระบวนการสร้าง VFX ตั้งแต่ขั้นพื้นฐานไปจนถึงการใช้งานเครื่องมือ Unreal Engine ในการสร้างเอฟเฟกต์ต่าง ๆ ภายในเกม เช่น แสงเงา ระเบิด เพื่อเสริมสร้างอารมณ์และบรรยากาศของเกม โดยผู้เชี่ยวชาญจากภาคอุตสาหกรรมเกมตัวจริงเสียงจริง",
+                "speakers": [] ,
+                "location": "A1-405",
+                "dateTime": "31 สิงหาคม เวลา 09.00 - 10.30 น. และ เวลา 12.00 - 13.30 น.",                  
+                "duration": "รอบละ 90 นาที จำนวนคนต่อรอบ 80 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>09:00 - 10:00 น.</div>
+                <div class="time-label noon">เที่ยง</div>
+                <div>12:00 - 13:30 น.</div>
+              </td>
+              <td>
+                <h1>การสร้าง Visual Effect สำหรับเกม ด้วย Unreal Engine</h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "เส้นทางสู่อาชีพ พบกับปรมาจารย์วงการเกมe",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ",
+                "description": "ได้พบกับปรมาจารย์วงการเกมที่จะมาแชร์ประสบการณ์และแรงบันดาลใจในการสร้างสรรค์ผลงานเกมระดับมืออาชีพ และได้เห็นเส้นทางสู่อาชีพในวงการเกม",
+                "speakers": ["Game Industry และ Career Path <br> - อ.เมธี ช่วยปู่ CEO บริษัท Bugblio Studio และอาจารย์ประจำภาควิชาเกมและสื่อเชิงโต้ตอบ คณะเทคโนโลยีสารสนเทศและนวัตกรรม",
+                "Game Business <br> - คุณ คเชนท์ พุทธิวราวุธ Co-Founder/Producer/Game Director บริษัท FairPlay Studio จำกัด <br> - คุณเมธาวุฒิ ศุภกุล Co-Founder บริษัท FairPlay Studio จำกัด",
+                "Game Publishing & Marketing <br> - คุณสินิทธ์ อาจหาญวงศ์ Co-Founder และ CEO บริษัท SHIN-A SERVICE จำกัด"] ,
+                "location": "A1-402",
+                "dateTime": "31 สิงหาคม เวลา 10.00 - 12.00 น. และ เวลา 12.00 - 13.30 น.",                  
+                "duration": "รอบละ 120 นาที จำนวนคนต่อรอบ 80 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>10:00 - 12:00 น.</div>
+              </td>
+              <td>
+                <h1>เส้นทางสู่อาชีพ พบกับปรมาจารย์วงการเกม</h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "เทคนิคการพัฒนาระบบและเป็นผู้ปกป้องหมวกขาวในโลกไซเบอร์ White Hacker",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยไซเบอร์",
+                "description": "ใครที่สนใจเรื่องไอที เป็นคนชอบใส่ใจเรื่อง Bug อยากลองเป็นนักเจาะระบบ (ในทางที่ดี) ที่เรียกว่า White Hat Hacker ให้มาลองลงมือปฏิบัติของจริง และฝึกฝนทักษะที่จำเป็นสำหรับชาว White Hat Hero โดยเฉพาะเรื่องการรักษาความปลอดภัยทางไซเบอร์",
+                "speakers": [] ,
+                "location": "A1-401",
+                "dateTime": "31 สิงหาคม เวลา 10.30 - 11.30 น.. และ 12.30 - 14.00 น.",                  
+                "duration": "จำนวนคนต่อรอบ 15 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>10:00 - 11:30 น.</div>
+                <div class="time-label noon">เที่ยง</div>
+                <div>12:30 - 14:00 น.</div>
+              </td>
+              <td>
+                <h1>
+                  เทคนิคการพัฒนาระบบและเป็นผู้ปกป้องหมวกขาวในโลกไซเบอร์ White
+                  Hacker
+                </h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์
+                  มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยไซเบอร์
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "A successful story of professional in IT Industry (CS)",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์",
+                "description": "พบกับผู้เชี่ยวชาญและบริษัทชั้นนำตัวจริงที่มาจากภาคอุตสาหกรรม Cyber Security มาให้ข้อมูลพาเจาะเข้าโลกของตำรวจไซเบอร์ จุดประกายแรงบันดาลใจในเส้นทางสายอาชีพด้านเทคโนโลยีให้กับน้อง ๆ ที่สนใจวงการนี้",
+                "speakers": [] ,
+                "location": "A1-407",
+                "dateTime": "31 สิงหาคม เวลา  09.00 - 10.00 น.",                  
+                "duration": "รอบละ 60 นาที จำนวนคนต่อรอบ 40 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>9:00 - 10:00 น.</div>
+              </td>
+              <td>
+                <h1>A successful story of professional in IT Industry (CS)</h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "เทคนิคการพัฒนาเว็บไซต์เต็มรูปแบบ (Frond End และ Back End)",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์",
+                "description": "ชวนน้อง ๆ ที่สนใจเรื่องการเขียนโปรแกรม รักในความซับซ้อนของการเขียนโค้ด มาเข้าร่วมงานลงมือปฏิบัติจริงทั้งเรื่อง Front-end และ Back-end ได้สัมผัสโปรแกรมอย่างลงลึก เห็นเทคนิคชั้นสูงต่าง ๆ จากผู้เชี่ยวชาญตัวจริง",
+                "speakers": [] ,
+                "location": "A1-407",
+                "dateTime": "31 สิงหาคม เวลา  10.00 - 11.00 น. และ 13.00 - 14.00 น.",                  
+                "duration": "รอบละ 60 นาที จำนวนคนต่อรอบ 40 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>10:00 - 11:00 น.</div>
+                <div class="time-label evening">บ่าย</div>
+                <div>13:00 - 14:00 น.</div>
+              </td>
+              <td>
+                <h1>
+                  เทคนิคการพัฒนาเว็บไซต์เต็มรูปแบบ (Frond End และ Back End)
+                </h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "เทคนิคการวิเคราะห์และการนำเสนอข้อมูล (Data Science and Data Visualization)",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยไซเบอร์",
+                "description": "ใครเป็นสายวิเคราะห์ข้อมูล ชอบแหวกว่ายในโลกของ Big Data แล้วยังสนใจเรื่องของโปรแกรมเมอร์ ห้ามพลาดกับ Workshop ของสาขาวิทยาการคอมพิวเตอร์นี้ น้อง ๆ ที่เข้าร่วมจะได้รับประสบการณ์ปฏิบัติงานจริง และได้เรียนรู้ทักษะอาชีพด้าน Data Science",
+                "speakers": [] ,
+                "location": "A1-407",
+                "dateTime": "31 สิงหาคม เวลา 11.00 - 12.00 น. และ 14.00 - 15.00 น.",                  
+                "duration": "รอบละ 60 นาที จำนวนคนต่อรอบ 40 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>11:00 - 12:00 น.</div>
+                <div class="time-label evening">บ่าย</div>
+                <div>14:00 - 15:00 น.</div>
+              </td>
+              <td>
+                <h1>
+                  เทคนิคการวิเคราะห์และการนำเสนอข้อมูล (Data Science and Data
+                  Visualization)
+                </h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์
+                  มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยไซเบอร์
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "A successful story of professional in IT Industry (IT)",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ",
+                "description": "น้องคนไหนที่ชอบเทคโนโลยี แต่ยังสงสัยถึง identity ว่าอะไรคือสารสนเทศนะ? ชวนมาหาคำตอบกับผู้เชี่ยวชาญตัวจริงเสียงจริงเรื่อง Information Technology กับบริษัทชั้นนำมาจากภาคอุตสาหกรรม ช่วยจุดประกายแรงบันดาลใจในเส้นทางสายอาชีพด้านเทคโนโลยี พาน้อง ๆ ต่อยอดความชอบได้อย่างตรงจุด",
+                "speakers": [] ,
+                "location": "A1-406",
+                "dateTime": "31 สิงหาคม เวลา 09.00 - 10.00 น.",                  
+                "duration": "รอบละ 60 นาที จำนวนคนต่อรอบ 40 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>9:00 - 10:00 น.</div>
+              </td>
+              <td>
+                <h1>A successful story of professional in IT Industry (IT)</h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "การใช้ปัญญาประดิษฐ์วิเคราะห์ธุรกิจ (Business Analyst)",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ",
+                "description": "ถ้าน้อง ๆ เป็นคนที่ชอบทั้งเรื่องเทคโนโลยี และสนใจเรื่องการต่อยอดในธุรกิจ ทุกคนที่เข้าร่วมจะได้เรียนรู้เกี่ยวกับบทบาทและหน้าที่ของ Business Analyst เช่น การวิเคราะห์ข้อมูล การระบุปัญหา และโอกาสในการปรับปรุงธุรกิจ ฝึกสกิลการจัดทำรายงานธุรกิจจากข้อมูลอันหลากหลาย อัปความรู้ได้ทั้งเรื่องธุรกิจและ data",
+                "speakers": [] ,
+                "location": "A1-406",
+                "dateTime": "31 สิงหาคม เวลา 10.00 - 11.00 น. และ 13.00 - 14.00 น.",                  
+                "duration": "รอบละ 60 นาที จำนวนคนต่อรอบ 40 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>10:00 - 11:00 น.</div>
+                <div class="time-label evening">บ่าย</div>
+                <div>13:00 - 14:00 น.</div>
+              </td>
+              <td>
+                <h1>การใช้ปัญญาประดิษฐ์วิเคราะห์ธุรกิจ (Business Analyst)</h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "การพัฒนาแอปพลิเคชัน ด้วย Low-Code Application Platform",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ",
+                "description": "อยากสร้างแอปเป็นของตัวเองให้หันมาทางนี้ ชวนน้อง ๆ มาเข้าร่วมกิจกรรมที่จะได้รับประสบการณ์ของจริงในการพัฒนาแอปพลิเคชันอย่างง่าย และรวดเร็ว ด้วย Oracle APEX",
+                "speakers": [] ,
+                "location": "A1-406",
+                "dateTime": "31 สิงหาคม เวลา 11.00 - 12.00  น. และ 14.00 - 15.00 น.",                  
+                "duration": "รอบละ 60 นาที จำนวนคนต่อรอบ 40 คน"
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">เช้า</div>
+                <div>11:00 - 12:00 น.</div>
+                <div class="time-label evening">บ่าย</div>
+                <div>14:00 - 15:00 น.</div>
+              </td>
+              <td>
+                <h1>การพัฒนาแอปพลิเคชัน ด้วย Low-Code Application Platform</h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "Industry Challenge Showcase: From Player to Pro-Creator",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ",
+                "description": "อยากสร้างแอปเป็นของตัวเองให้หันมาทางนี้ ชวนน้อง ๆ มาเข้าร่วมกิจกรรมที่จะได้รับประสบการณ์ของจริงในการพัฒนาแอปพลิเคชันอย่างง่าย และรวดเร็ว ด้วย Oracle APEX",
+                "speakers": [] ,
+                "location": "A1-101",
+                "dateTime": "31 สิงหาคม เวลา 09.00-16.00 น.",                  
+                "duration": ""
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">ทั้งวัน</div>
+                <div>9:00 - 16:00 น.</div>
+              </td>
+              <td>
+                <h1>Industry Challenge Showcase: From Player to Pro-Creator</h1>
+                <h2>
+                  คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ
+                </h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+
+            <tr
+              data-details='{
+                "title": "Student Showcase : From Task to Pro-Developer",
+                "subtitle": "คณะเทคโนโลยีสารสนเทศและนวัตกรรม",
+                "description": "น้องๆ ที่สนใจอยากเป็นโปรแกรมเมอร์ขั้นเทพ มาชมการจัดแสดงผลงานสาขาวิชาเทคโนโลยีสารสนเทศ และสาขาวิชาวิทยาการคอมพิวเตอร์ ที่ประยุกต์ด้านการเขียนโปรแกรมร่วมกับเทคโนโลยี พร้อมได้รับความรู้แน่นๆ จากรุ่นพี่X",
+                "speakers": [] ,
+                "location": "โถง A1",
+                "dateTime": "31 สิงหาคม เวลา 09.00-16.00 น.",                  
+                "duration": ""
+            }'
+              onclick="openModal(this)"
+            >
+              <td>
+                <div class="time-label morning">ทั้งวัน</div>
+                <div>9:00 - 16:00 น.</div>
+              </td>
+              <td>
+                <h1>Student Showcase : From Task to Pro-Developer</h1>
+                <h2>คณะเทคโนโลยีสารสนเทศและนวัตกรรม</h2>
+                <p>รายละเอียดเพิ่มเติม</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Modal HTML -->
+    <div
+      class="modal fade"
+      id="detailModal"
+      tabindex="-1"
+      aria-labelledby="detailModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="detailModalLabel">Event Detail</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="modalBodyContent">
+            <!-- Event details will be injected here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+      // Function to close the navbar when clicking outside of it
+      document.addEventListener("click", function (event) {
+        const navbar = document.querySelector(".navbar-collapse");
+        const toggler = document.querySelector(".navbar-toggler");
+        const target = event.target;
+
+        // Check if the click is outside the navbar and toggler
+        if (!navbar.contains(target) && !toggler.contains(target)) {
+          // Collapse the navbar
+          if (navbar.classList.contains("show")) {
+            const bsCollapse = new bootstrap.Collapse(navbar, {
+              toggle: false,
+            });
+            bsCollapse.hide();
+          }
+        }
+      });
+    </script>
+    <script>
+      // Function to open the modal and populate event details
+      function openModal(rowElement) {
+        // Retrieve the event details from the data-details attribute
+        const details = JSON.parse(rowElement.getAttribute("data-details"));
+
+        document.getElementById("detailModalLabel").innerHTML = `
+                ${details.title}<br>
+                <small>${details.subtitle}</small>
+            `;
+
+        // Construct the HTML for the modal content
+        let detailsHtml = `
+            
+            <p>${details.description}</p>
+            <ul>
+                 ${
+                   details.speakers && details.speakers.length > 0
+                     ? `<ul>${details.speakers
+                         .map((speaker) => `<li>${speaker}</li>`)
+                         .join("")}</ul>`
+                     : ""
+                 }
+            </ul>
+            <p><strong>สถานที่:</strong> ${details.location}</p>
+             <p><strong>วัน เวลา:</strong> ${details.dateTime}</p>
+            <p><strong></strong> ${details.duration}</p>
+        `;
+
+        // Populate the modal content
+        document.getElementById("modalBodyContent").innerHTML = detailsHtml;
+
+        // Show the modal
+        const detailModal = new bootstrap.Modal(
+          document.getElementById("detailModal")
+        );
+        detailModal.show();
+        // Add event listener to the close button
+        document
+          .getElementById("closeModalButton")
+          .addEventListener("click", function () {
+            // Add any actions you want to perform when the modal is closed here
+            console.log("Modal closed");
+          });
+      }
+    </script>
+  </body>
+</html>

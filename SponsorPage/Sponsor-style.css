@@ -1,0 +1,60 @@
+body {
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  .page-title {
+    font-size: 3rem;
+    color: #333;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .page-title:hover {
+    
+    color: #f57c00 ;
+    transform: scale(1.1);
+  }
+  
+  .page-detail {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 3rem;
+  }
+  
+  .sponsor-section {
+    margin-top: 3rem;
+  }
+  
+  .sponsor-card {
+    text-align: center;
+  }
+
+  .sponsor-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sponsor-card:hover .sponsor-image {
+    transform: scale(1.05);
+  }
+  
+  .partner-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    color: #333;
+  }
+  @media (max-width: 990px) {
+    .page-detail {
+        font-size: 0.7rem;
+        padding: 1rem;
+      }
+  }
